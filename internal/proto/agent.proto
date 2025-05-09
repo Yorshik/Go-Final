@@ -1,0 +1,17 @@
+syntax = "proto3";
+package agent;
+option go_package = "github.com/Yorshik/Go-Final/internal/proto/gen/agentpb";
+
+service Agent {
+  rpc SendExpression (ExpressionRequest) returns (ExpressionResult);
+}
+
+message ExpressionRequest {
+  string id = 1;
+  string expression = 2;
+}
+
+message ExpressionResult {
+  string id = 1;
+  string result = 2;
+}
