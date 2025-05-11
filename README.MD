@@ -75,7 +75,7 @@ xcode-select --install
 ```
 5. **Установите Необходимые Зависимости:**
 ```bash
-   go mod download
+go mod download
 ```
 6. Перед запуском проекта заполните .env
 - DB_NAME - имя базы данных
